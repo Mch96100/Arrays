@@ -1,0 +1,17 @@
+#Array
+
+#include<iostream>
+using namespace std;
+
+//Array : collection of similar data type elements stored in contiguous memory locations.
+
+int main(){
+    int arr[5];
+    //user input in array
+    for(int i=0;i<=4;i++){
+        cin>>arr[i];
+        cout<<"Array elements are : "<<arr[i]<<" "<<endl;
+    }
+    return 0;
+}
+
