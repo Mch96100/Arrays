@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+//binary Search : start , end , mid
+//binary search is used to find the position of an element in a sorted array
+
+int main(){
+    int n = 6;
+   
+    int arr[n] = {1,2,3,4,5,6};
+   
+    int target = 5;
+   
+
+    int start = 0;
+    int end = n-1;
+    int mid = (start + end)/2;
+
+    while(start < end){
+        if(arr[mid] == target){
+            cout<<"Element found at index : "<<mid<<endl;
+            return 0;
+        }
+        else if(arr[mid] < target){
+            start = mid + 1;
+        }
+        else{
+            end = mid - 1;
+        }
+        mid = (start + end)/2;
+    }
+
+    cout<<"Element not found in the array"<<endl;
+
+    return 0;
+}
